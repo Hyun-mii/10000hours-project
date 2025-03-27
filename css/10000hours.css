@@ -113,6 +113,16 @@ input{
 }
 .calbtn{
     padding-top: 115px;
+    position: relative;
+}
+.calbtn::after{
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 72px;
+    top: 129px;
+    background: url(../img/click.png)no-repeat;
+
 }
 
 button{
@@ -139,7 +149,7 @@ button{
     text-decoration-line: none;
     border-radius: 56px;
     color: #5B2386;
-    box-shadow: rgba(0, 0, 0, 0.5);
+    box-shadow:rgba(0, 0, 0, 0.5);
 } 
 
 .go{
@@ -174,7 +184,7 @@ footer p{
 /* 모달창 */
 
 .modal{
-    /* display: none; */
+    display: none;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -187,7 +197,7 @@ footer p{
     color: #5B2386;
     background-color: #FFFFFF;
     border-radius: 32px;
-    box-shadow:rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.5);
 
     }   
 
@@ -276,6 +286,9 @@ footer p{
         border-radius: 13px;
 
     }
+    .calbtn::after{
+        background-size: 43px 48px;
+    }
     .output strong{
         font-size: 24px;
     }
@@ -325,7 +338,7 @@ footer p{
         margin-top:34px;
         margin-left: 45px;
         margin-bottom: 40px;
-
+        
         width: 241px;
         height: 68px;
         font-size: 14px;
